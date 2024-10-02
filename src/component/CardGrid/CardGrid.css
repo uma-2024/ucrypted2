@@ -1,0 +1,71 @@
+.card-grid-container {
+    padding: 54px 84px;
+    background-color: #181818;
+    color: white;
+  }
+  
+  .icon-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .icon-card img {
+    width: 96px;
+height: 94px;
+    margin-bottom: 5px;
+  }
+  
+  .category-section {
+    margin-bottom: 30px;
+  }
+  
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .category-header h3 {
+    font-size: 18px;
+  }
+  
+  .category-header a {
+    font-size: 14px;
+    color: #f9d423;
+    text-decoration: none;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .company-card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .company-card img {
+    width: 100%;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
