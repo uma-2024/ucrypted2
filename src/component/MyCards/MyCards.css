@@ -1,0 +1,12 @@
+.mycard-container{
+    background: #0F0F0F;
+    padding: 82px 78px;
+}
+
+.mycard-heading{
+    color: #FFF;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}

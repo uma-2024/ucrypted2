@@ -32,7 +32,10 @@ const Footer = () => {
           <h4>Subscribe to our newsletter</h4>
           <div className="newsletter-input">
             <input type="email" placeholder="Email address" />
-            <button className="subscribe-btn">{'>'}</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+<path d="M0 8C0 3.58172 3.58172 0 8 0H42C46.4183 0 50 3.58172 50 8V50H0V8Z" fill="white"/>
+<path d="M22.1542 29.1333L25.975 25.3125L22.1542 21.4917L23.3333 20.3125L28.3333 25.3125L23.3333 30.3125L22.1542 29.1333Z" fill="black"/>
+</svg>
           </div>
         </div>
         <div className="footer-links">

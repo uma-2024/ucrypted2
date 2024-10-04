@@ -1,0 +1,84 @@
+.travel-topups-container {
+    padding: 20px 120px;
+    background-color: #181818;
+    color: white;
+  }
+  
+  .travel-topups-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .header-container21 {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+  }
+  .header-container21 input{
+    background: #9C9C9C;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+  .travel-topups-header h2 {
+    font-size: 24px;
+  }
+  
+  .see-all-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .topups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .topup-card {
+    background-color: #282828;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .topup-image {
+    max-width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .topup-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .topup-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .topup-rating {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .topup-price {
+    font-size: 14px;
+    color: #bbb;
+    font-weight: 700;
+  }
+  .select-category{
+    padding: 8px 10px;
+  background-color: #9C9C9C;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  }

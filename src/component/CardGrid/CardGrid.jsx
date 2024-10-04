@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardGrid.css'; // Import CSS for styling
+import './CardGrid.css'; 
 import foodImage from '../../Assets/Images/Group 12.png'
 import cardImage from '../../Assets/Images/image (42).png'
 import cardImage2 from '../../Assets/Images/image (41).png'
@@ -44,6 +44,46 @@ const CardGrid = () => {
       <div className="category-section">
         <div className="category-header">
           <h3>Food</h3>
+          <a href="#see-all">See All</a>
+        </div>
+        <div className="card-grid">
+          <div className="company-card">
+            <img src={cardImage} alt="NordVPN" />
+          </div>
+          <div className="company-card">
+            <img src={cardImage2} alt="Zomato" />
+          </div>
+          <div className="company-card">
+            <img src={cardImage3} alt="Myntra" />
+          </div>
+          <div className="company-card">
+            <img src={cardImage4} alt="Starbucks" />
+          </div>
+        </div>
+      </div>
+      <div className="category-section">
+        <div className="category-header">
+          <h3>Bitcoin Cashback!</h3>
+          <a href="#see-all">See All</a>
+        </div>
+        <div className="card-grid">
+          <div className="company-card">
+            <img src={cardImage} alt="NordVPN" />
+          </div>
+          <div className="company-card">
+            <img src={cardImage2} alt="Zomato" />
+          </div>
+          <div className="company-card">
+            <img src={cardImage3} alt="Myntra" />
+          </div>
+          <div className="company-card">
+            <img src={cardImage4} alt="Starbucks" />
+          </div>
+        </div>
+      </div>
+      <div className="category-section">
+        <div className="category-header">
+          <h3>Bitcoin Cashback!</h3>
           <a href="#see-all">See All</a>
         </div>
         <div className="card-grid">

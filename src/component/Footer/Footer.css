@@ -1,10 +1,10 @@
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: #181818;
+    background-color: #212121;
     color: white;
     padding: 40px 186px;
-    font-family: Arial, sans-serif;
+    text-align: left;
     border-top: 1px solid #2c2c2c;
   }
   
@@ -30,6 +30,16 @@
   
   .newsletter-section h4 {
     margin-bottom: 10px;
+    color: #FFF;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.3px;
+width:180px;
+text-align: left;
+margin-bottom: 30px;
+margin-top: 0px;
   }
   
   .newsletter-input {
@@ -42,6 +52,9 @@
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
+    background-color: #212121;
+    color: #fff;
+    border-bottom: 1px solid grey;
   }
   
   .subscribe-btn {
@@ -67,6 +80,7 @@
   
   .footer-links h4 {
     margin-bottom: 10px;
+    margin-top: 0px;
   }
   
   .footer-links ul {
@@ -93,21 +107,20 @@
     text-align: right;
     display: flex;
   justify-content: end;
+  gap: 30px;
+  align-items: center;
   }
   
   .get-started-btn {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #666;
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    height: 40px;
   }
-  
-  .get-started-btn:hover {
-    background-color: #f9d423;
-  }
-  
+
   .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -115,7 +128,9 @@
     border-top: 1px solid #2c2c2c;
     padding-top: 20px;
   }
-  
+  .footer-bottom p{
+    margin: 0px;
+  }
   .footer-terms a {
     margin-left: 20px;
     text-decoration: none;

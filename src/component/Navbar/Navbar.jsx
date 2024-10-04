@@ -1,36 +1,45 @@
 import React from 'react';
-import './Navbar.css'; // Import CSS for styling
-import logoImage from '../../Assets/Images/logo.png'
+import './Navbar.css'; 
+import logoImage from '../../Assets/Images/logo.png';
+import { Link, useNavigate } from 'react-router-dom'; 
+
 
 const Navbar = () => {
-  return (
-    <nav className="navbar-container">
-      {/* Left Logo Section */}
-      <div className="navbar-logo">
-        <img src={logoImage} alt="Logo" className="logo" />
+    const navigate = useNavigate();
+    
+    const handleShowGiftCards = (e) => {
+        e.preventDefault(); 
+        navigate("/giftcards"); 
+    };
+    const handleLogoClick = () => {
+        navigate("/"); // Navigates to the home route
+      };
+      const handleLoginClick = () => {
+        navigate("/login"); // Navigates to the home route
+      };
+    return (
+        <nav className="navbar-container">
         
-      </div>
+            <div className="navbar-logo" onClick={handleLogoClick} style={{ cursor: "pointer" }}>
+                <img src={logoImage} alt="Logo" className="logo" />
+            </div>
 
-      {/* Middle Links Section */}
-      <div className='navbar-second-container'>
-
-     
-      <div className="navbar-links">
-        <a href="#gift-cards">Digital Gift Cards</a>
-        <a href="#airtime-topups">Airtime Top-ups</a>
-        <a href="#utility-payments">Utility Payments</a>
-      </div>
-
-      {/* Right Actions Section */}
-      <div className="navbar-actions">
-        <div className="language-selector">
-          <span role="img" aria-label="globe">🌐</span> EN
-        </div>
-        <button className="login-btn">Login</button>
-      </div>
-      </div>
-    </nav>
-  );
+        
+            <div className='navbar-second-container'>
+                <div className="navbar-links">
+                    <Link to="/giftcards" onClick={handleShowGiftCards}>Digital Gift Cards</Link>
+                    <Link to="/topups">Airtime Top-ups</Link>
+                    <Link to="/utility">Utility Payments</Link>
+                </div>
+                <div className="navbar-actions">
+                    <div className="language-selector">
+                        <span role="img" aria-label="globe">🌐</span> EN
+                    </div>
+                    <button className="login-btn" onClick={handleLoginClick} style={{ cursor: "pointer" }}>Login</button>
+                </div>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;

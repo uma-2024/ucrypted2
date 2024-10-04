@@ -1,0 +1,36 @@
+ .amountcards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 16px;
+} 
+.amount-item{
+    background-color: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0px;
+  
+}
+
+
+.amount-btn-div p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.amount-btn{
+    padding: 8px 15px;
+  background: #3c99f7;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  margin-top: 20px;
+
+}
+.operator-detail-container{
+    padding: 20px 84px;
+    background-color: #212121;
+    color: white;
+    align-items: center;
+}
